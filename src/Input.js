@@ -1,5 +1,6 @@
 import React from "react";
 import "./Input.css";
+import { adminPassword } from "./Validation";
 
 class Input extends React.Component {
   state = {
@@ -27,7 +28,10 @@ class Input extends React.Component {
       <>
         <div className="container">
           <div className="row ">
-            <div className="col-2 border border-primary">1 of 3</div>
+            <div className="col-2 border border-primary">
+              <h4>Profile</h4>
+              {adminPassword.name}
+            </div>
             {/* for textarea */}
             <div className="col-8 border border-warning">
               <div className="mb-3">
